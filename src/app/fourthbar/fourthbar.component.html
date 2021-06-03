@@ -1,0 +1,36 @@
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/salah-times/']">
+        <img class="app-icon" src="assets/images/import.png" />
+        <span>Salah Times</span>
+      </a>
+      <div class="flexi-container">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--<div class="d-flex d-sm-inline-flex flex-sm-row-reverse">
+         
+          <input *ngIf="enabledSearch" aria-label="Search" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" (click)="enabledSearch=!enabledSearch;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </div>-->
+
+      </div>
+      <div class="navbar-collapse collapse flex-md-row-reverse" id="navbarCollapse" [ngClass]="{show : isExpanded}">
+        <ul class="navbar-nav">
+          <li class="nav-item"> <a class="nav-link text-dark" [routerLink]="['/salah-times/home']">Home</a></li>
+          <!--<li class="nav-item"> <a class="nav-link text-dark" [routerLink]="['/salah-times/dashboard']">Dashboard</a></li>-->
+          <li class="nav-item"> <a class="nav-link text-dark" [routerLink]="['/salah-times/importer']">Importer</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

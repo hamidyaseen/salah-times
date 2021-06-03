@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+textarea.full-width {
+  width: 100%;
+  height: 300px;
+}
+
+div.full-width {
+    width: 100%;
+    height: 400px;
+    overflow:auto;
+  }
+

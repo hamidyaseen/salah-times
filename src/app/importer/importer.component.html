@@ -1,0 +1,16 @@
+
+<div class="container">
+  <p>Imput Salah data!</p>
+  <textarea class="full-width" placeholder="line-wise input data" [formControl]="salahTime">
+  </textarea>
+  <hr />
+  <div class="full-width">
+    <table *ngIf="daysCalendar$ | async as daysCalendar" style="width:100%">
+      <tbody>
+        <tr *ngFor="let day of daysCalendar">
+          <td *ngFor="let dayColumn of day.lineColums">{{dayColumn}}&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

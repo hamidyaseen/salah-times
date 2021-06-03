@@ -1,0 +1,11 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.app-icon {
+  max-width: 33px;
+  margin: 1px 7px 1px 0px;
+}
+
+.navbar > .container > .flexi-container {
+    display: inherit;
+    flex-wrap: inherit;
+}
